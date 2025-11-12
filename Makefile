@@ -23,8 +23,8 @@ CXX = g++
 INCLUDES=-Icommon
 
 # cflags used
-CFLAGS=-O3 -march=native -static
-CXXFLAGS=-O3 -march=native -static
+CFLAGS=-O3 -std=c11 -Wno-implicit-fallthrough -Wno-unused-variable -Wno-unused-but-set-variable -Wno-parentheses
+CXXFLAGS=-O3 -fpermissive -Wno-register -std=c++11
 
 # common libraries used
 COMMON_LIBS=-lrt -ldl -lnuma -lpthread -lm

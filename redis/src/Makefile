@@ -22,7 +22,7 @@ DEPENDENCY_TARGETS=hiredis linenoise lua
 NODEPS:=clean distclean
 
 # Default settings
-STD=-std=c99 -pedantic -DREDIS_STATIC=''
+STD=-std=c99 -pedantic -DREDIS_STATIC='' -Wno-implicit-fallthrough
 WARN=-Wall -W -Wno-missing-field-initializers
 OPT=$(OPTIMIZATION)
 

@@ -6,7 +6,7 @@ TARGET=canneal
 LIBS:=$(LIBS) -lm
 
 
-CXXFLAGS=-msse3 -O3 -march=native
+CXXFLAGS:=-O3 -fpermissive -Wno-register -Wno-return-type
 
 ifdef version
   ifeq "$(version)" "pthreads"
